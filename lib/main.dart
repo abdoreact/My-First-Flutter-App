@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
-
 void main() => runApp(
   MaterialApp(
-    home:Scaffold(
+    home:Home(),
+  ),
+);
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
-        title:Text("Hello"),
+        title:Text("Hello yo"),
         backgroundColor: Colors.red[500],
       ),
       body: Center(
-        child:Text(
-            "I Am Abdo",
-            style:TextStyle(
-            backgroundColor:Colors.red[500],
-            fontSize:20,
-            fontWeight:FontWeight.bold,
-            )
+        child:Image(
+            image:AssetImage(
+              "/Users/abdelrahmanel-naggar/flutterapp/fluttertut/assets/86c4a323-845a-49a2-b27e-2b9f98a8f3cb.JPG"
+              )
           ),
         ),
       floatingActionButton: FloatingActionButton(
@@ -26,8 +28,8 @@ void main() => runApp(
           "Click"
           )
       ),
-    ),
-  ),
-);
+    );
+  }
+}
 
 
